@@ -1,0 +1,14 @@
+{% extends 'articulos/base.html' %}
+
+{% block content %}
+<div class="row">  	
+    <h1 class="text-center">{{articulo.title}}</h1>
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid" src="{{articulo.image.url}}" alt="">
+    </div>
+    <p>{{articulo.content}}</p>
+</div> 
+
+{% endblock content %}
+
+
