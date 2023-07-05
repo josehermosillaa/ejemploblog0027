@@ -1,0 +1,27 @@
+{% extends 'articulos/base.html' %}
+
+{% block content %}
+
+<div class="row mt-3 ">  	
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        {% load static %}
+        <img class="img-fluid" src="{% static '/articulos/img/gatito.png' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading title">Mi articulo</h2>   
+    <p>{% lorem 1 b random %}</p>
+        <p><a href="#">Más información</a></p>
+    </div>
+</div>
+<div class="row  mt-3">  	
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        {% load static %}
+        <img class="img-fluid" src="{% static '/articulos/img/perrito.png' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading title">Mi articulo 2</h2>   
+    <p>{% lorem 1 b random %}</p>
+        <p><a href="#">Más información</a></p>
+    </div>
+</div>
+{% endblock content %}
