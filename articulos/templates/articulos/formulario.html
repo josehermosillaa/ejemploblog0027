@@ -1,0 +1,13 @@
+{% extends 'articulos/base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="row col-6 mt-3">
+    <form enctype="multipart/form-data" action="" method="post">
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit" value="Agregar">
+    </form>
+
+</div>
+{% endblock content %}

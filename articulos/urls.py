@@ -6,6 +6,8 @@ from django.conf import settings
 urlpatterns = [
     path("", views.index, name="index"),
     path("content/<int:id>/", views.content_view, name="content"),
+    path("form/", views.create_article_view, name="form"),
+
 ]
 
 if settings.DEBUG:
