@@ -1,0 +1,15 @@
+{% extends 'articulos/base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="row col-6 mt-3">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form|crispy}}
+        <p class="text-center">Si nio tienes una cuenta, registrate <a
+            href="/register">aqui</a>.</p>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</div>
+{% endblock content %}
